@@ -10,7 +10,7 @@ import java.util.Random;
 //更新顺序U,S,T,a,b,c
 
 
-public class CTTN_DE extends InitTensor{
+public class MTN_TRL extends InitTensor{
 
 	public double sumTime = 0; //训练累计时间
 
@@ -55,7 +55,7 @@ public class CTTN_DE extends InitTensor{
 	}
 
 
-	CTTN_DE(String trainFile, String validFile, String testFile, String separator )
+	MTN_TRL(String trainFile, String validFile, String testFile, String separator )
 	{
 		super(trainFile, validFile, testFile, separator);
 	}
@@ -428,7 +428,7 @@ public class CTTN_DE extends InitTensor{
 			for (int i = 0; i <= 0; i++) {
 				for (int j = 0; j <= 0; j++) {
 					//训练：验证：测试=5%：5%：90%
-					CTTN_DE bnlft = new CTTN_DE(
+					MTN_TRL bnlft = new MTN_TRL(
 //							"D:\\Tensor\\Dataset\\network\\D" + number + "\\0.1tr.txt",
 //							"D:\\Tensor\\Dataset\\network\\D" + number + "\\0.2va.txt",
 //							"D:\\Tensor\\Dataset\\network\\D" + number + "\\0.7te.txt", "::");

@@ -8,7 +8,7 @@ import java.io.IOException;
 //更新顺序U,S,T,a,b,c
 
 
-public class CTTN extends InitTensor{
+public class MTN extends InitTensor{
 
 	public double sumTime = 0; //训练累计时间
 
@@ -29,7 +29,7 @@ public class CTTN extends InitTensor{
 	public int minRRRound = 0;
 	public double[] timeCost = new double[1000+1];
 
-	CTTN(String trainFile, String validFile, String testFile, String separator )
+	MTN(String trainFile, String validFile, String testFile, String separator )
 	{
 		super(trainFile, validFile, testFile, separator); 
 	}
@@ -309,7 +309,7 @@ public class CTTN extends InitTensor{
 			for (int i = 0; i <= 12; i++) {
 				for (int j = 0; j <= 12; j++) {
 					//训练：验证：测试=5%：5%：90%
-					CTTN bnlft = new CTTN(
+					MTN bnlft = new MTN(
 							"D:\\Tensor\\Dataset\\network\\D" + number + "\\0.1tr.txt",
 							"D:\\Tensor\\Dataset\\network\\D" + number + "\\0.2va.txt",
 							"D:\\Tensor\\Dataset\\network\\D" + number + "\\0.7te.txt", "::");
